@@ -1,0 +1,12 @@
+<use name="FWCore/Framework"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/ParameterSet"/>
+<use name="FWCore/ServiceRegistry"/>
+<use name="FWCore/Common"/>
+<use name="DataFormats/HcalDigi"/>
+<use name="DataFormats/L1GlobalTrigger"/>
+<use name="DataFormats/Common"/>
+<use name="CommonTools/UtilAlgos"/>
+<use name="L1Trigger/GlobalTriggerAnalyzer"/>
+<use name="L1Trigger/L1TGlobal"/>
+<flags EDM_PLUGIN="1"/>
