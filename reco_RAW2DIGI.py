@@ -27,8 +27,8 @@ process.source = cms.Source("PoolSource",
     fileNames = cms.untracked.vstring(
 #	'root://xrootd.unl.edu//store/data/Run2015C/ZeroBias2/RAW/v1/000/254/608/00000/04BAB119-4D47-E511-9BF5-02163E0123AE.root'),
 #   		'root://xrootd.unl.edu//store/data/Run2015C/ZeroBias1/RAW/v1/000/255/031/00000/026EE823-0A4C-E511-8315-02163E014742.root', 
-#		'root://xrootd.unl.edu//store/data/Run2015C/ZeroBias1/RAW/v1/000/255/031/00000/04ADBC27-0A4C-E511-A6AB-02163E0139A4.root') 
-		'file:/afs/cern.ch/work/m/mnorthup/private/MBTrigger/data/04ADBC27-0A4C-E511-A6AB-02163E0139A4.root')
+		'root://xrootd.unl.edu//store/data/Run2015C/ZeroBias1/RAW/v1/000/255/031/00000/04ADBC27-0A4C-E511-A6AB-02163E0139A4.root') 
+#		'file:/afs/cern.ch/work/m/mnorthup/private/MBTrigger/data/04ADBC27-0A4C-E511-A6AB-02163E0139A4.root')
  , secondaryFileNames = cms.untracked.vstring()
 )
 
@@ -51,7 +51,9 @@ process.RECOSIMoutput = cms.OutputModule("PoolOutputModule",
         filterName = cms.untracked.string('')
     ),
     eventAutoFlushCompressedSize = cms.untracked.int32(5242880),
-    fileName = cms.untracked.string('/afs/cern.ch/user/m/mnorthup/private/MBTrigger/HFBitEmulation/Data/Latest_1012015/IsolatedReleaseArea/CMSSW_7_6_0_pre4/src/rawdigioutput.root'),
+    fileName = cms.untracked.string(
+			#'/afs/cern.ch/user/m/mnorthup/private/MBTrigger/HFBitEmulation/Data/Latest_1012015/IsolatedReleaseArea/CMSSW_7_6_0_pre4/src/rawdigioutput.root'),
+				'output file path'
 #    outputCommands = process.RECOSIMEventContent.outputCommands,
     splitLevel = cms.untracked.int32(0)
 )
